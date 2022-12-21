@@ -17,10 +17,25 @@ if opcion == "1":
 else:
      operacion = "resta"
 print(f"Introduzca dos numeros para la operación de " + operacion + ".")
-x = input()
-y = input()
+
+errorNum = False
+try:
+    x = int(input())
+    y = int(input())
+except:
+    errorNum = True
+while errorNum == True:
+    errorNum = False
+    print("No se permiten caracteres que no sean números\nIntroduzca dos numeros para la " + operacion + ".")
+    try:
+        x = int(input())
+        y = int(input())
+    except:
+        errorNum = True
+
 
 if opcion == "1": 
     suma(x, y)
 if opcion == "2": 
     resta(x, y)
+
