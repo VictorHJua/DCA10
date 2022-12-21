@@ -6,8 +6,12 @@ def resta(n1, n2):
 
 
 print("¿Que operación quiere realizar?\n1. Suma\n2. Resta")
-opcion = input()
 operacion = ""
+opcion = ""
+while opcion!= "1" and opcion!="2":
+    opcion = input()
+    if opcion!= "1" and opcion!="2":
+        print("Elige una opción válida\n1. Suma\n2. Resta")
 if opcion == "1": 
     operacion = "suma"
 else:
@@ -18,5 +22,5 @@ y = input()
 
 if opcion == "1": 
     suma(x, y)
-else:
+if opcion == "2": 
     resta(x, y)
