@@ -33,7 +33,7 @@ def resta(n1, n2):
     print(f"Resultado: ", (float(n1) - float(n2)) )
 
 def mult(n1, n2):
-    print(f"Resultado: ", (float(n2) * float(n2)) )
+    print(f"Resultado: ", (float(n1) * float(n2)) )
 
 def div(n1, n2):
     num = 0
